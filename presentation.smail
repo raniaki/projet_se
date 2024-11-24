@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<smil xmlns="http://www.w3.org/ns/SMIL" version="3.0" baseProfile="Language">
+  <head>
+    <layout>
+      <root-layout width="1824" height="878" backgroundImage="background.png"/> 
+      <region id="background" width="1938px" height="909px" z-index="-1" />
+      <!-- Région pour le texte général -->
+      <region id="text" top="10" left="512" width="800" height="150" backgroundColor="transparent" fit="fill"/> 
+      <region id="image" top="120" left="10" width="700" height="400" backgroundColor="transparent" fit="fill"/> 
+      
+      <!-- Région pour le titre centré -->
+      <region id="center-title" top="270" left="550" width="1026" height="126" backgroundColor="transparent" fit="fill"/>
+      
+      <!-- Régions pour FORTRAN -->
+      <region id="fortran-img" top="210" left="217" width="299" height="299" backgroundColor="transparent" fit="fill"/>
+      <region id="fortran-text" top="590" left="52" width="677" height="200" backgroundColor="transparent" fit="fill"/>
+      
+      <!-- Régions pour COBOL -->
+      <region id="cobol-img" top="210" left="990" width="378" height="299" backgroundColor="transparent" fit="fill"/>
+      <region id="cobol-text" top="588" left="840" width="611" height="211" backgroundColor="transparent" fit="fill"/>
+      
+      <!-- Régions pour Altair 8800 -->
+      <region id="altair-img" top="210" left="217" width="299" height="299" backgroundColor="transparent" fit="fill"/>
+      <region id="altair-text" top="590" left="52" width="677" height="200" backgroundColor="transparent" fit="fill"/>
+      
+      <!-- Régions pour Apple -->
+      <region id="apple-img" top="210" left="990" width="377" height="299" backgroundColor="transparent" fit="fill"/>
+      <region id="apple-text" top="588" left="840" width="611" height="211" backgroundColor="transparent" fit="fill"/>
+      
+      <!-- Régions pour Tim Berners-Lee -->
+      <region id="tim-img" top="210" left="217" width="299" height="299" backgroundColor="transparent" fit="fill"/>
+      <region id="tim-text" top="590" left="52" width="677" height="200" backgroundColor="transparent" fit="fill"/>
+      
+      <!-- Régions pour Netscape Navigator -->
+      <region id="netscape-img" top="210" left="990" width="377" height="299" backgroundColor="transparent" fit="fill"/>
+      <region id="netscape-text" top="588" left="840" width="611" height="211" backgroundColor="transparent" fit="fill"/>
+      
+      <!-- Régions pour Algol -->
+      <region id="algol-img" top="210" left="196" width="526" height="523.66" backgroundColor="transparent" fit="fill"/>
+      <region id="algol-text" top="383" left="859" width="500" height="390" backgroundColor="transparent" fit="fill"/>
+      
+      <!-- Régions pour IBM PC -->
+      <region id="ibmpc-img" top="210" left="217" width="299" height="299" backgroundColor="transparent" fit="fill"/>
+      <region id="ibmpc-text"  top="383" left="859" width="500" height="390" backgroundColor="transparent" fit="fill"/>
+      
+      <!-- Régions pour Moteurs de recherche -->
+      <region id="searchengines-img" top="210" left="217" width="299" height="299" backgroundColor="transparent" fit="fill"/>
+      <region id="searchengines-text" top="383" left="859" width="500" height="390" backgroundColor="transparent" fit="fill"/>
+    </layout>
+  </head>
+  <body>
+    <par>
+      <img src="background.png" region="background" begin="0s" dur="40s" fill="freeze" />
+      <!-- Section 3: L'essor des langages de programmation (1960-1970) -->
+      <seq id="section3">
+        <par id="titre" begin="5s" dur="2s">
+          <text src="titre.txt" region="center-title"/>
+        </par>
+     <par id="fortran-cobol" begin="7s" dur="19s">
+  <text src="fortran.txt" region="fortran-text"/>
+  <img src="fortran.png" region="fortran-img"/>
+  <text src="cobol.txt" region="cobol-text"/>
+  <img src="cobol.png" region="cobol-img"/>
+  <audio src="cobol_fortran.mp3" region="background" fill="freeze"/>
+</par>
+
+<par id="algol" begin="26s" dur="12s">
+  <text src="algol.txt" region="algol-text"/>
+  <img src="algol.png" region="algol-img"/>
+  <audio src="algol.mp3" region="background" fill="freeze"/>
+</par>
+
+<par id="altair-apple" begin="40s" dur="39s">
+  <text src="altair8800.txt" region="altair-text"/>
+  <img src="altair.jpg" region="altair-img"/>
+  <text src="apple.txt" region="apple-text"/>
+  <img src="apple.png" region="apple-img"/>
+  <audio src="altair.mp3" region="background" fill="freeze"/>
+</par>
+
+<par id="ibmpc" begin="79s" dur="16s">
+  <text src="ibmpc.txt" region="ibmpc-text"/>
+  <img src="ibmpc.png" region="ibmpc-img"/>
+  <audio src="IBM.mp3" region="background" fill="freeze"/>
+</par>
+
+<par id="tim-netscape" begin="97s" dur="32s">
+  <text src="timbernerslee.txt" region="tim-text"/>
+  <img src="timbernerslee.png" region="tim-img"/>
+  <text src="netscapenavigator.txt" region="netscape-text"/>
+  <img src="netscapenavigator.png" region="netscape-img"/>
+  <audio src="Tim.mp3" region="background" fill="freeze"/>
+</par>
+
+<par id="searchengines" begin="129s" dur="17s">
+  <text src="searchengines.txt" region="searchengines-text"/>
+  <img src="searchengines.png" region="searchengines-img"/>
+  <audio src="Moteur.mp3" region="background" fill="freeze"/>
+</par>
+      </seq>
+    </par>
+
+    <!-- Audio Sections (écoute audio sans chevauchement) -->
+    <par>
+      <audio src="cobol_fortran.mp3" begin="7s" dur="19s" region="background" fill="freeze "/>
+      <audio src="algol.mp3" begin="26s" dur="12s" region="background"/>
+      <audio src="altair.mp3" begin="40s" dur="39s" region="background"/>
+      <audio src="IBM.MP3" begin="79s" dur="16s" region="background"/>
+      <audio src="Tim.mp3" begin="97s" dur="32s" region="background"/>
+      <audio src="Moteur.mp3" begin="129s" dur="17s" region="background"/>
+    </par>
+  </body>
+</smil>

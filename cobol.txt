@@ -1,0 +1,2 @@
+                                                    COBOL (1959)
+Développé par un comité dirigé par Grace Hopper, COBOL (“COmmon Business-Oriented Language”) a été conçu pour les applications commerciales. Il a élargi l’utilisation de l’informatique dans le monde des affaires et des administrations

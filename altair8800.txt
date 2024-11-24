@@ -1,0 +1,2 @@
+                                                  Altair 8800 (1975)
+Créé par MITS, l'Altair 8800 est souvent considéré comme le premier véritable ordinateur personnel. Sa sortie a incité Bill Gates et Paul Allen à créer Microsoft pour développer un interpréteur BASIC pour cette machine

@@ -1,0 +1,2 @@
+                                                  ALGOL (1960)
+Connu comme le précurseur de nombreux langages modernes, notamment Pascal, C et Java, ALGOL a introduit des concepts importants comme la structuration de la programmation

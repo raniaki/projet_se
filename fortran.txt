@@ -1,0 +1,2 @@
+                                                             FORTRAN (1957)
+ Créé par John Backus chez IBM, FORTRAN (“FORmula TRANslation”) a été le premier langage de programmation de haut niveau, rendant la programmation accessible pour les calculs scientifiques et techniques. Il a grandement réduit le temps de développement.
